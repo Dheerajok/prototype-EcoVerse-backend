@@ -1,36 +1,55 @@
-# NestJS Compiled Output
+# NestJS Build Output
 /dist
+dist/
+**/dist/
 
-# Dependencies
+# Node Dependencies
 /node_modules
+node_modules/
+**/node_modules/
 
-# Logs
+# Logs & Debugging
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# Runtime data
+# Runtime data & PIDs
 pids
 *.pid
 *.seed
 *.pid.lock
 
-# Directory for instrumented code leveraged by Istanbul
-coverage
+# Test & Coverage Output
+/coverage
+coverage/
+*.lcov
 
-# Operating System Files
-.DS_Store
-Thumbs.db
-
-# Environment variables
+# Environment Variables & Secrets
 .env
+.env.local
+.env.development
+.env.test
+.env.production
 .env.*
 !.env.example
 
-# IDEs and editors
+# OS Files & System Caches
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# IDEs & Code Editors
 .idea/
 .vscode/
+*.swp
+*.swo
 
-# TypeScript
+# TypeScript Build Caches
 *.tsbuildinfo
+
+# Temporary Files
+.temp/
+.tmp/
+scratch/
